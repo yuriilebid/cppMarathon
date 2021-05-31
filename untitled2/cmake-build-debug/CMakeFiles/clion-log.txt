@@ -1,80 +1,27 @@
-"/home/vladyslav/Рабочий стол/clion-2020.3.1/bin/cmake/linux/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/vladyslav/CLionProjects/untitled2
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/yuriilebid/Desktop/cppMarathon/untitled2
+-- The C compiler identification is AppleClang 12.0.5.12050022
+-- The CXX compiler identification is AppleClang 12.0.5.12050022
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Conan: Automatic detection of conan settings from cmake
--- Conan: Settings= -s;build_type=Debug;-s;compiler=gcc;-s;compiler.version=10;-s;compiler.libcxx=libstdc++11
+-- Conan: Settings= -s;build_type=Debug;-s;compiler=apple-clang;-s;compiler.version=12.0;-s;compiler.libcxx=libc++
 -- Conan: checking conan executable
--- Conan: Found program /home/vladyslav/.local/bin/conan
--- Conan: Version found Conan version 1.33.1
+CMake Error at cmake-build-debug/conan.cmake:795 (message):
+  Conan executable not found! Please install conan.
+Call Stack (most recent call first):
+  cmake-build-debug/conan.cmake:473 (conan_check)
+  cmake-build-debug/conan.cmake:759 (old_conan_cmake_install)
+  CMakeLists.txt:23 (conan_cmake_run)
 
--- Conan executing: /home/vladyslav/.local/bin/conan install . -s build_type=Debug -s compiler=gcc -s compiler.version=10 -s compiler.libcxx=libstdc++11 -g=cmake --build=missing -o=simple-websocket-server:use_asio_standalone=False
-Configuration:
-[settings]
-arch=x86_64
-arch_build=x86_64
-build_type=Debug
-compiler=gcc
-compiler.libcxx=libstdc++11
-compiler.version=10
-os=Linux
-os_build=Linux
-[options]
-simple-websocket-server:use_asio_standalone=False
-[build_requires]
-[env]
 
-conanfile.txt: Installing package
-Requirements
-    boost/1.74.0 from 'conan-center' - Cache
-    bzip2/1.0.8 from 'conan-center' - Cache
-    cxxopts/2.2.1 from 'conan-center' - Cache
-    libiconv/1.16 from 'conan-center' - Cache
-    libwebsockets/4.2.0 from 'conan-center' - Cache
-    msgpack/3.2.1 from 'conan-center' - Cache
-    nlohmann_json/3.9.1 from 'conan-center' - Cache
-    openssl/1.1.1k from 'conan-center' - Cache
-    simple-websocket-server/2.0.2 from 'conan-center' - Cache
-    websocketpp/0.8.2 from 'conan-center' - Cache
-    zlib/1.2.11 from 'conan-center' - Cache
-Packages
-    boost/1.74.0:967339af5a27c737de128d773e96fdf5a09cae0a - Cache
-    bzip2/1.0.8:9f84c49e2143828a044b1675a587477e091c9f9f - Cache
-    cxxopts/2.2.1:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
-    libiconv/1.16:75e99b627c196b65c439728670655ec3c366b334 - Cache
-    libwebsockets/4.2.0:cf9b0af1b417c555f6fac096d295600ed02889dc - Cache
-    msgpack/3.2.1:12cf9d9c4b13976e042f9c48a76cc8ca92ffa844 - Cache
-    nlohmann_json/3.9.1:d1091b2ed420e6d287293709a907ae824d5de508 - Cache
-    openssl/1.1.1k:75e99b627c196b65c439728670655ec3c366b334 - Cache
-    simple-websocket-server/2.0.2:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
-    websocketpp/0.8.2:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
-    zlib/1.2.11:75e99b627c196b65c439728670655ec3c366b334 - Cache
-
-Installing (downloading, building) binaries...
-bzip2/1.0.8: Already installed!
-cxxopts/2.2.1: Already installed!
-libiconv/1.16: Already installed!
-libiconv/1.16: Appending PATH environment var: /home/vladyslav/.conan/data/libiconv/1.16/_/_/package/75e99b627c196b65c439728670655ec3c366b334/bin
-msgpack/3.2.1: Already installed!
-nlohmann_json/3.9.1: Already installed!
-openssl/1.1.1k: Already installed!
-zlib/1.2.11: Already installed!
-boost/1.74.0: Already installed!
-libwebsockets/4.2.0: Already installed!
-simple-websocket-server/2.0.2: Already installed!
-websocketpp/0.8.2: Already installed!
-conanfile.txt: Generator txt created conanbuildinfo.txt
-conanfile.txt: Generator cmake created conanbuildinfo.cmake
-conanfile.txt: Generated conaninfo.txt
-conanfile.txt: Generated graphinfo
-WARN: simple-websocket-server/2.0.2: requirement openssl/1.1.1h overridden by your conanfile to openssl/1.1.1k 
-WARN: websocketpp/0.8.2: requirement openssl/1.1.1h overridden by your conanfile to openssl/1.1.1k 
-boost/1.74.0: WARN: Picked up a system libbacktrace library
--- Conan: Loading conanbuildinfo.cmake
--- Conan: Adjusting output directories
--- Conan: Using cmake global configuration
--- Conan: Adjusting default RPATHs Conan policies
--- Conan: Adjusting language standard
--- Current conanbuildinfo.cmake directory: /home/vladyslav/CLionProjects/untitled2/cmake-build-debug
--- Conan: Compiler GCC>=5, checking major version 10
--- Conan: Checking correct version: 10
--- Configuring done
--- Generating done
--- Build files have been written to: /home/vladyslav/CLionProjects/untitled2/cmake-build-debug
+-- Configuring incomplete, errors occurred!
+See also "/Users/yuriilebid/Desktop/cppMarathon/untitled2/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/yuriilebid/Desktop/cppMarathon/untitled2/cmake-build-debug/CMakeFiles/CMakeError.log".
