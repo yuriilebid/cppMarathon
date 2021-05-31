@@ -1,0 +1,90 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/yuriilebid/CLionProjects/core_3
+-- Conan: Automatic detection of conan settings from cmake
+In file included from <stdin>:1:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string:506:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string_view:175:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__string:57:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/algorithm:641:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/cstring:60:
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string.h:60:15: fatal error: 'string.h' file not found
+#include_next <string.h>
+              ^~~~~~~~~~
+1 error generated.
+-- Conan: Settings= -s;build_type=Debug;-s;compiler=apple-clang;-s;compiler.version=12.0;-s;compiler.libcxx=libc++
+-- Conan: checking conan executable
+-- Conan: Found program /opt/homebrew/bin/conan
+-- Conan: Version found Conan version 1.36.0
+
+-- Conan executing: /opt/homebrew/bin/conan install . -s build_type=Debug -s compiler=apple-clang -s compiler.version=12.0 -s compiler.libcxx=libc++ -g=cmake --build=missing
+Configuration:
+[settings]
+arch=armv8
+arch_build=armv8
+build_type=Debug
+compiler=apple-clang
+compiler.libcxx=libc++
+compiler.version=12.0
+os=Macos
+os_build=Macos
+[options]
+[build_requires]
+[env]
+
+WARN: simple-websocket-server/2.0.2: requirement openssl/1.1.1j overridden by your conanfile to openssl/1.1.1k 
+WARN: websocketpp/0.8.2: requirement openssl/1.1.1h overridden by your conanfile to openssl/1.1.1k 
+conanfile.txt: Installing package
+Requirements
+    boost/1.74.0 from 'conan-center' - Cache
+    bzip2/1.0.8 from 'conan-center' - Cache
+    cxxopts/2.2.1 from 'conan-center' - Cache
+    libbacktrace/cci.20210118 from 'conan-center' - Cache
+    libiconv/1.16 from 'conan-center' - Cache
+    libwebsockets/4.2.0 from 'conan-center' - Cache
+    msgpack/3.2.1 from 'conan-center' - Cache
+    nlohmann_json/3.9.1 from 'conan-center' - Cache
+    openssl/1.1.1k from 'conan-center' - Cache
+    simple-websocket-server/2.0.2 from 'conan-center' - Cache
+    websocketpp/0.8.2 from 'conan-center' - Cache
+    zlib/1.2.11 from 'conan-center' - Cache
+Packages
+    boost/1.74.0:d5423ca7414786d5e85698756b155567dbcd540b - Cache
+    bzip2/1.0.8:1eebc1ca972faabad362af04f3107014f151fa5d - Cache
+    cxxopts/2.2.1:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
+    libbacktrace/cci.20210118:baf78352c82543f997ec32332829b6fa30714eaa - Cache
+    libiconv/1.16:baf78352c82543f997ec32332829b6fa30714eaa - Cache
+    libwebsockets/4.2.0:1a0530527d89bee9d30990bb264db3fd99095830 - Cache
+    msgpack/3.2.1:b97bc4c4fde1538a4c154a6ec366247ffa5c4350 - Cache
+    nlohmann_json/3.9.1:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
+    openssl/1.1.1k:baf78352c82543f997ec32332829b6fa30714eaa - Cache
+    simple-websocket-server/2.0.2:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
+    websocketpp/0.8.2:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
+    zlib/1.2.11:baf78352c82543f997ec32332829b6fa30714eaa - Cache
+
+Installing (downloading, building) binaries...
+bzip2/1.0.8: Already installed!
+bzip2/1.0.8: Appending PATH environment variable: /Users/yuriilebid/.conan/data/bzip2/1.0.8/_/_/package/1eebc1ca972faabad362af04f3107014f151fa5d/bin
+cxxopts/2.2.1: Already installed!
+libbacktrace/cci.20210118: Already installed!
+libiconv/1.16: Already installed!
+libiconv/1.16: Appending PATH environment var: /Users/yuriilebid/.conan/data/libiconv/1.16/_/_/package/baf78352c82543f997ec32332829b6fa30714eaa/bin
+msgpack/3.2.1: Already installed!
+nlohmann_json/3.9.1: Already installed!
+openssl/1.1.1k: Already installed!
+zlib/1.2.11: Already installed!
+boost/1.74.0: Already installed!
+libwebsockets/4.2.0: Already installed!
+simple-websocket-server/2.0.2: Already installed!
+websocketpp/0.8.2: Already installed!
+conanfile.txt: Generator cmake created conanbuildinfo.cmake
+conanfile.txt: Generator txt created conanbuildinfo.txt
+conanfile.txt: Generated conaninfo.txt
+conanfile.txt: Generated graphinfo
+-- Conan: Loading conanbuildinfo.cmake
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Current conanbuildinfo.cmake directory: /Users/yuriilebid/CLionProjects/core_3/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/yuriilebid/CLionProjects/core_3/cmake-build-debug

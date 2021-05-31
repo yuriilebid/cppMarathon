@@ -1,0 +1,16 @@
+[generators]
+cmake
+
+[requires]
+nlohmann_json/3.9.1
+simple-websocket-server/2.0.2
+msgpack/3.2.1
+websocketpp/0.8.2
+cxxopts/2.2.1
+openssl/1.1.1k
+libwebsockets/4.2.0
+
+[options]
+simple-websocket-server:use_asio_standalone=False
+
+[imports]
